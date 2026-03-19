@@ -1,0 +1,16 @@
+<svg width="183" height="46" viewBox="0 0 183 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect opacity="0.6" x="0.5" y="0.5" width="45" height="45" stroke="#15161C"/>
+  <path d="M10.2207 30.3404V10.2222H27.4316V30.3404" stroke="#15161C" stroke-width="4.5"/>
+  <path d="M35.7773 15.6595V35.7777H18.5665V15.6595" stroke="#EA5501" stroke-width="4.5"/>
+
+  <text
+    x="58"
+    y="30"
+    fill="#15161C"
+    font-size="26"
+    font-weight="700"
+    font-family="Arial, Helvetica, sans-serif"
+  >
+    Builderz
+  </text>
+</svg>
