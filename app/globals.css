@@ -1,2 +1,25 @@
 @import "tailwindcss";
 
+@keyframes edge-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-edge-scroll {
+  animation: edge-scroll 48s linear infinite;
+  will-change: transform;
+}
+
+.animate-edge-scroll-slow {
+  animation: edge-scroll 50s linear infinite;
+  will-change: transform;
+}
+
+.animate-edge-scroll-fast {
+  animation: edge-scroll 18s linear infinite;
+  will-change: transform;
+}
