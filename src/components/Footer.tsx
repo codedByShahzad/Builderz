@@ -35,7 +35,7 @@ export default function Footer() {
         <div className="absolute inset-0 bg-linear-to-r from-black via-black/60 to-black/80" />
       </div>
 
-      <div className="relative z-10 mx-auto max-w-7xl px-5 pt-14 sm:px-8 lg:px-10 lg:pt-16">
+      <div className="relative z-10 mx-auto max-w-400 px-5 pt-14 sm:px-8 lg:px-10 lg:pt-16">
         {/* TOP */}
         <div className="flex flex-col gap-10 border-b border-white/10 pb-10 lg:flex-row lg:items-center lg:justify-between lg:pb-12">
           <div className="flex items-center gap-4">
