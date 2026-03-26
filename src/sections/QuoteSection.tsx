@@ -6,8 +6,8 @@ import MovingEdge from "../components/MovingEdge";
 
 export default function QuoteSection() {
   return (
-    <section className="relative top-[-200px] z-10 bg-transparent py-0">
-      <div className="mx-auto max-w-[1600px] px-0 sm:px-6 lg:px-8 xl:px-10">
+    <section className="relative top-[-200px]  z-10  py-0">
+      <div className="mx-auto  max-w-[1600px] px-0 sm:px-6 lg:px-8 xl:px-10">
         <div className="relative mx-auto max-w-[1360px] overflow-visible">
           <div className="grid items-end gap-0 px-2 pb-0 pt-4 sm:px-4 lg:grid-cols-[1.34fr_0.66fr] lg:px-0 lg:pt-0">
             {/* LEFT PANEL */}
