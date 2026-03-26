@@ -3,6 +3,7 @@ import HeroSection from "@/src/sections/HeroSection";
 import QuoteSection from "@/src/sections/QuoteSection";
 import ServicesSection from "@/src/sections/ServiceSection";
 import WhyChooseUsSection from "@/src/sections/WhyChooseUsSection";
+import WorkProcessSection from "@/src/sections/WorkProcessSection";
 import Image from "next/image";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
      <ServicesSection />
      <QuoteSection />
      <WhyChooseUsSection />
+     <WorkProcessSection />
     </div>
   );
 }

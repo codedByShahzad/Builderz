@@ -105,7 +105,7 @@ function FeatureItem({
 
 export default function WhyChooseUsSection() {
   return (
-    <section className="relative top-[-100px] overflow-hidden py-10 sm:py-12 lg:py-14 xl:py-16 ">
+    <section className="relative overflow-hidden  ">
        <MovingEdge
               imageSrc="/images/bartop.png"
               position="bottom"
@@ -123,7 +123,7 @@ export default function WhyChooseUsSection() {
       <div className="absolute right-0 top-44 hidden h-20 w-2 bg-[#f15a00] xl:block" />
 
 
-      <div className="relative z-10 mx-auto max-w-[1600px] pb-20 px-4 sm:px-8 lg:px-10">
+      <div className="relative z-10 mx-auto max-w-[1600px] 0 px-4 sm:px-8 lg:px-10">
         {/* top heading */}
         <div className="mx-auto max-w-[820px] text-center">
           <div className="flex items-center justify-center gap-3">
@@ -147,7 +147,7 @@ export default function WhyChooseUsSection() {
         {/* main layout */}
         <div className="mt-8 grid items-end gap-8 lg:grid-cols-[1fr_0.72fr_1fr] lg:gap-4 xl:mt-10 xl:gap-8">
           {/* left features */}
-          <div className="space-y-8 lg:space-y-10 xl:space-y-12">
+          <div className="space-y-8 lg:space-y-10 xl:space-y-12 pb-20">
             {leftFeatures.map((item) => (
               <FeatureItem
                 key={item.title}
@@ -172,7 +172,7 @@ export default function WhyChooseUsSection() {
           </div>
 
           {/* right features */}
-          <div className="space-y-8 lg:space-y-10 xl:space-y-12">
+          <div className="space-y-8 lg:space-y-10 xl:space-y-12 pb-20">
             {rightFeatures.map((item) => (
               <FeatureItem
                 key={item.title}

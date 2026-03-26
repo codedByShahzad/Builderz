@@ -6,12 +6,12 @@ import MovingEdge from "../components/MovingEdge";
 
 export default function QuoteSection() {
   return (
-    <section className="relative top-[-200px]  z-10  py-0">
+    <section className="relative top-[-100px]  z-10  py-0">
       <div className="mx-auto  max-w-[1600px] px-0 sm:px-6 lg:px-8 xl:px-10">
         <div className="relative mx-auto max-w-[1360px] overflow-visible">
           <div className="grid items-end gap-0 px-2 pb-0 pt-4 sm:px-4 lg:grid-cols-[1.34fr_0.66fr] lg:px-0 lg:pt-0">
             {/* LEFT PANEL */}
-            <div className="relative z-20 w-full bg-white px-8 py-10 sm:px-10 sm:py-12 lg:min-h-[520px] lg:px-14 lg:py-14 xl:px-16">
+            <div className="relative z-20 w-full bg-white px-8 py-10 sm:px-10 sm:py-12 lg:min-h-[520px] lg:px-14 lg:py-14 xl:px-16 shadow-[0_25px_70px_rgba(0,0,0,0.08)]">
                <MovingEdge
                       imageSrc="/images/bartop.png"
                       position="top"
