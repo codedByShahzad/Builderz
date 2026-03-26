@@ -108,18 +108,10 @@ export default function HeroSection() {
           <div className="grid w-full grid-cols-1 lg:grid-cols-12">
             {/* LEFT CONTENT */}
             <div className="flex min-h-[95vh] items-center py-14 sm:py-20 lg:col-span-7 lg:min-h-[860px] lg:items-center lg:py-28">
-              <div className="flex w-full flex-col justify-between lg:block">
+              <div className="flex w-full flex-col  justify-between lg:block">
                 {/* upper content */}
                 <div className="w-full max-w-[760px]">
-                  {/* eyebrow */}
-                  <div className="flex justify-center md:justify-start">
-                    <div className="inline-flex items-center gap-2.5 rounded-md border border-white/12 bg-white/8 px-3 py-2 backdrop-blur-md sm:px-4">
-                      <span className="h-2 w-2 rounded-full bg-[#f15a00]" />
-                      <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-white/80 sm:text-[12px]">
-                        Smart Construction Solutions
-                      </p>
-                    </div>
-                  </div>
+                 
 
                   <h1 className="mt-6 max-w-[680px] text-center text-[52px] font-semibold leading-[0.94] tracking-[-1.8px] text-white sm:text-[60px] md:text-left md:text-[68px] lg:text-[78px] xl:text-[88px]">
                     Build your

@@ -2,7 +2,7 @@ import React from 'react'
 
 const WhyChooseUsSection = () => {
   return (
-    <div>WhyChooseUsSection</div>
+    <div className='bg-[#FEFEFE] '>WhyChooseUsSection</div>
   )
 }
 

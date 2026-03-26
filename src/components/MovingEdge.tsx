@@ -29,7 +29,7 @@ export default function MovingEdge({
   return (
     <div
       className={clsx(
-        "pointer-events-none absolute left-0 z-2 w-full overflow-hidden",
+        "pointer-events-none absolute left-0 z-[2] w-full overflow-hidden",
         position === "top" ? "top-0" : "bottom-0",
         className
       )}
@@ -39,13 +39,13 @@ export default function MovingEdge({
         className={clsx(
           "flex w-max",
           speedClasses[speed],
-          position === "bottom" && "rotate-180"
+          position === "bottom" && "scale-y-[-1]"
         )}
         style={{ height }}
       >
         {/* copy 1 */}
         <div className="flex shrink-0">
-          <div className="relative h-full w-300 sm:w-350 lg:w-400 xl:w-450 2xl:w-500">
+          <div className="relative h-full w-[1200px] sm:w-[1400px] lg:w-[1600px] xl:w-[1800px] 2xl:w-[2000px]">
             <Image
               src={imageSrc}
               alt={alt}
@@ -58,7 +58,7 @@ export default function MovingEdge({
 
         {/* copy 2 */}
         <div className="flex shrink-0">
-          <div className="relative h-full w-300 sm:w-350 lg:w-400 xl:w-450 2xl:w-500">
+          <div className="relative h-full w-[1200px] sm:w-[1400px] lg:w-[1600px] xl:w-[1800px] 2xl:w-[2000px]">
             <Image
               src={imageSrc}
               alt={alt}
