@@ -4,6 +4,7 @@ import LatestProjectsSection from "@/src/sections/LatestProjectsSection";
 import QuoteSection from "@/src/sections/QuoteSection";
 import ServicesSection from "@/src/sections/ServiceSection";
 import StatsSection from "@/src/sections/StatsSection";
+import TestimonialSection from "@/src/sections/TestimonialSection";
 import WhyChooseUsSection from "@/src/sections/WhyChooseUsSection";
 import WorkProcessSection from "@/src/sections/WorkProcessSection";
 import Image from "next/image";
@@ -19,6 +20,7 @@ export default function Home() {
      <WorkProcessSection />
      <LatestProjectsSection />
      <StatsSection />
+     <TestimonialSection />
     </div>
   );
 }
