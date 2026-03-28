@@ -26,7 +26,7 @@ export default function HeroSection() {
         />
       </div>
 
-      <div className="relative min-h-[95vh] lg:min-h-[860px]">
+      <div className="relative min-h-[90vh]">
         {/* FULL BACKGROUND LAYOUT */}
         <div className="absolute inset-0 grid grid-cols-1 lg:grid-cols-12">
           {/* LEFT BG */}
@@ -104,7 +104,7 @@ export default function HeroSection() {
         </div>
 
         {/* CONTENT */}
-        <div className="relative z-10 mx-auto flex min-h-[95vh] max-w-[1600px] px-4 sm:px-8 lg:min-h-[860px] lg:px-10">
+        <div className="relative z-10 mx-auto flex min-h-[95vh] max-w-400 px-4 sm:px-8 lg:min-h-[860px] lg:px-10">
           <div className="grid w-full grid-cols-1 lg:grid-cols-12">
             {/* LEFT CONTENT */}
             <div className="flex min-h-[95vh] items-center py-14 sm:py-20 lg:col-span-7 lg:min-h-[860px] lg:items-center lg:py-28">
