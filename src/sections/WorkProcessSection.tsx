@@ -117,13 +117,13 @@ export default function WorkProcessSection() {
           <div className="relative z-10 mx-auto max-w-[1600px] px-4 pb-44 pt-20 sm:px-8 sm:pb-48 sm:pt-24 lg:px-10">
             <div className="max-w-[520px]">
               <div className="flex items-center gap-3">
-                <Image
-                  src="/images/sectionicon.svg"
-                  alt="Section icon"
-                  width={26}
-                  height={14}
-                  className="h-auto w-7 brightness-0 invert"
-                />
+                  <Image
+                                            src="/images/sectionicon.svg"
+                                            alt="Section icon"
+                                            width={26}
+                                            height={14}
+                                            className="h-auto w-7"
+                                          />
                 <span className="text-[13px] font-medium uppercase tracking-[0.04em] text-white/80">
                   Work Process
                 </span>
@@ -146,7 +146,7 @@ export default function WorkProcessSection() {
         </div>
 
         {/* TRUCK */}
-        <div className="pointer-events-none absolute bottom--[20px] right-0 z-10 w-[220px] sm:w-[280px] lg:w-[320px] hidden md:flex">
+        <div className="pointer-events-none absolute bottom--[20px] right-0 w-[220px] z-10000000 sm:w-[280px] lg:w-[320px] hidden md:flex">
           <Image
             src="/images/orangeTruck.png"
             alt="Orange excavator"
