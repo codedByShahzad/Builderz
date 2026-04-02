@@ -35,24 +35,24 @@ type TeamCardProps = {
 
 function TeamCard({ name, role, image, phoneHref, socials }: TeamCardProps) {
   return (
-    <div className="group relative overflow-hidden border-3 border-transparent bg-[#f2f2f2] transition-all duration-300 hover:border-[#f7630c]">
+    <div className="group relative min-h-[560px] overflow-hidden border-[3px] border-transparent bg-[#f2f2f2] transition-all duration-300 hover:border-[#f7630c] sm:min-h-[620px] lg:min-h-[650px] xl:min-h-[690px]">
       {/* card bg image */}
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/teamCardBg.png"
           alt="Team card background"
           fill
-          className="object-cover"
+          className="object-cover opacity-100"
         />
       </div>
 
       {/* content */}
-      <div className="relative z-[2] px-5 pt-5 sm:px-7 sm:pt-7 lg:px-6 lg:pt-6 xl:px-7 xl:pt-7">
-        <h3 className="text-[24px] font-semibold leading-[1.15] tracking-[-0.03em] text-[#181a22] sm:text-[28px] lg:text-[26px] xl:text-[30px]">
+      <div className="relative z-[2] px-5 pt-5 sm:px-7 sm:pt-7 lg:px-8 lg:pt-8">
+        <h3 className="text-[24px] font-semibold leading-[1.15] tracking-[-0.03em] text-[#181a22] sm:text-[28px] lg:text-[30px] xl:text-[32px]">
           {name}
         </h3>
 
-        <p className="mt-3 text-[16px] text-[#7d7d7d] sm:text-[18px] lg:text-[17px]">
+        <p className="mt-3 text-[16px] text-[#7d7d7d] sm:text-[18px]">
           {role}
         </p>
 
@@ -84,21 +84,23 @@ function TeamCard({ name, role, image, phoneHref, socials }: TeamCardProps) {
       </div>
 
       {/* member image */}
-      <div className="relative z-[2] flex min-h-[220px] items-end justify-center px-3 pt-2 sm:min-h-[260px] sm:px-4 lg:min-h-[280px] xl:min-h-[320px]">
-        <Image
-          src={image}
-          alt={name}
-          width={500}
-          height={500}
-          className="h-auto max-h-[290px] w-auto object-contain transition duration-300 group-hover:scale-[1.02] sm:max-h-[330px] lg:max-h-[350px] xl:max-h-[390px]"
-        />
+      <div className="absolute bottom-0 left-0 right-0 z-[2] h-[360px] sm:h-[420px] lg:h-[450px] xl:h-[500px]">
+        <div className="relative h-full w-full">
+          <Image
+            src={image}
+            alt={name}
+            fill
+            className="object-contain object-bottom transition duration-300 group-hover:scale-[1.03]"
+            sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+          />
+        </div>
       </div>
 
       {/* phone button */}
       <Link
         href={phoneHref}
         aria-label={`Call ${name}`}
-        className="absolute bottom-5 left-5 z-[3] flex h-[46px] w-[46px] items-center justify-center rounded-full bg-[#f7630c] text-[18px] text-white transition duration-300 hover:-translate-y-1 hover:shadow-lg sm:bottom-6 sm:left-6 sm:h-[50px] sm:w-[50px] sm:text-[20px]"
+        className="absolute bottom-5 left-5 z-[3] flex h-[46px] w-[46px] items-center justify-center rounded-full bg-[#f7630c] text-[18px] text-white transition duration-300 hover:-translate-y-1 hover:shadow-lg sm:bottom-6 sm:left-6 sm:h-[52px] sm:w-[52px] sm:text-[20px]"
       >
         <FiPhoneCall />
       </Link>
@@ -118,7 +120,7 @@ export default function TeamSection({
     typeof limit === "number" ? teamMembers.slice(0, limit) : teamMembers;
 
   return (
-    <section className="relative flex  items-center overflow-hidden bg-[#f6f6f6] py-15 sm:py-18 lg:py-20">
+    <section className="relative overflow-hidden bg-[#f6f6f6] py-15 sm:py-18 lg:py-20">
       <div className="mx-auto w-full max-w-[1320px] px-4 sm:px-6 lg:px-8">
         {/* top area */}
         <div className="mb-6 flex flex-col gap-4 lg:mb-8 lg:flex-row lg:items-start lg:justify-between">
@@ -162,8 +164,8 @@ export default function TeamSection({
             displayedMembers.length === 1
               ? "grid-cols-1"
               : displayedMembers.length === 2
-                ? "grid-cols-1 md:grid-cols-2"
-                : "grid-cols-1 md:grid-cols-2 xl:grid-cols-3"
+              ? "grid-cols-1 md:grid-cols-2"
+              : "grid-cols-1 md:grid-cols-2 xl:grid-cols-3"
           }`}
         >
           {displayedMembers.map((member) => (
@@ -178,6 +180,7 @@ export default function TeamSection({
           ))}
         </div>
       </div>
+
       <MovingEdge
         imageSrc="/images/bartop.png"
         position="bottom"
